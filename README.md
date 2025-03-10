@@ -41,7 +41,7 @@ else:
 
 실행화면입니다.
 
-<img width="680" alt="image" src="https://github.com/user-attachments/assets/cd775475-9102-4eb0-88ee-5f7d284ca5c1" />
+![pic1](https://github.com/user-attachments/assets/71b59ece-e0c3-4cc6-b23a-3793848ff617)
 
 
 ## Streamlit
@@ -60,7 +60,7 @@ if picture:
 
 구현된 화면 이미지입니다.
 
-<img width="699" alt="image" src="https://github.com/user-attachments/assets/63ca9cf1-64f1-47a3-aefb-f33f23643b5a" />
+![pic2](https://github.com/user-attachments/assets/ee3d7688-f63c-41f0-9417-a4043e520593)
 
 
 
