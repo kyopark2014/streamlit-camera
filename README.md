@@ -32,6 +32,30 @@ if picture:
 <img width="699" alt="image" src="https://github.com/user-attachments/assets/63ca9cf1-64f1-47a3-aefb-f33f23643b5a" />
 
 
+## OpenCV
+
+[Live webcam feed into the web app](https://discuss.streamlit.io/t/live-webcam-feed-into-the-web-app/397)와 같이 OpenCV를 이용해 Streamlit으로 카메라 인터페이스를 만들 수 있습니다.
+
+CV를 이용해 video capture를 해서 반복적으로 보여주는 방법으로 비디오처럼 웹캠을 보여줄 수 있습니다.
+
+```python
+import cv2
+import streamlit as st
+
+st.title("Webcam Live")
+
+run = st.checkbox('Run')
+FRAME_WINDOW = st.image([])
+camera = cv2.VideoCapture(0)
+
+while run:
+    _, frame = camera.read()
+    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    FRAME_WINDOW.image(frame)
+else:
+    st.write('Stopped')
+```
+
 
 ## QR Detector 
 
@@ -72,4 +96,3 @@ if image is not None:
 
 ## Reference
 
-[Live webcam feed into the web app](https://discuss.streamlit.io/t/live-webcam-feed-into-the-web-app/397)
