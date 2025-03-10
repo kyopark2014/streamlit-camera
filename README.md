@@ -93,6 +93,24 @@ if img_file_buffer is not None:
     st.write(img_array.shape)  # (height, width, channels)
 ```
 
+CV2를 이용한 활용의 예제입니다.
+
+```python
+import streamlit as st
+import cv2
+import numpy as np
+
+img_file_buffer = st.camera_input("Take a picture")
+
+if img_file_buffer is not None:
+    bytes_data = img_file_buffer.getvalue()
+    cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
+
+    st.write(type(cv2_img))  # <class 'numpy.ndarray'>
+
+    st.write(cv2_img.shape) # (height, width, channels)
+```
+
 ## QR Detector 
 
 [QR detector](https://github.com/blackary/streamlit-camera-input-live/blob/main/example_app%2Fstreamlit_app.py) 사용시 설치 명령어는 아래와 같습니다.
