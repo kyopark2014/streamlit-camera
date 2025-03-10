@@ -74,6 +74,25 @@ if img_file_buffer is not None:
     st.write(type(bytes_data))
 ```
 
+Pillow and Numpy를 이용한 처리의 예는 아래와 같습니다.
+
+```python
+import streamlit as st
+from PIL import Image
+import numpy as np
+
+img_file_buffer = st.camera_input("Take a picture")
+
+if img_file_buffer is not None:
+    img = Image.open(img_file_buffer)
+
+    img_array = np.array(img)   # To convert PIL Image to numpy array:
+
+    st.write(type(img_array)) # <class 'numpy.ndarray'>
+
+    st.write(img_array.shape)  # (height, width, channels)
+```
+
 ## QR Detector 
 
 [QR detector](https://github.com/blackary/streamlit-camera-input-live/blob/main/example_app%2Fstreamlit_app.py) 사용시 설치 명령어는 아래와 같습니다.
