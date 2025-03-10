@@ -28,7 +28,8 @@ else:
 
 실행화면입니다.
 
-![pic1](https://github.com/user-attachments/assets/71b59ece-e0c3-4cc6-b23a-3793848ff617)
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/71b59ece-e0c3-4cc6-b23a-3793848ff617" />
+
 
 cv2의 설치는 아래와 같이 진행합니다.
 
@@ -59,8 +60,7 @@ if picture:
 
 구현된 화면 이미지입니다.
 
-![pic2](https://github.com/user-attachments/assets/ee3d7688-f63c-41f0-9417-a4043e520593)
-
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/ee3d7688-f63c-41f0-9417-a4043e520593" />
 
 
 ## QR Detector 
