@@ -56,6 +56,9 @@ else:
     st.write('Stopped')
 ```
 
+실행화면입니다.
+
+<img width="680" alt="image" src="https://github.com/user-attachments/assets/cd775475-9102-4eb0-88ee-5f7d284ca5c1" />
 
 ## QR Detector 
 
