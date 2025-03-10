@@ -62,6 +62,17 @@ if picture:
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/ee3d7688-f63c-41f0-9417-a4043e520593" />
 
+이미지를 byte로 저장해서 활용하는 방법은 아래와 같습니다.
+
+```python
+import streamlit as st
+
+img_file_buffer = st.camera_input("Take a picture")
+
+if img_file_buffer is not None:
+    bytes_data = img_file_buffer.getvalue()
+    st.write(type(bytes_data))
+```
 
 ## QR Detector 
 
