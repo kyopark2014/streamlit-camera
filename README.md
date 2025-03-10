@@ -13,23 +13,6 @@ streamlit run application/app.py
 ```
 
 
-## Streamlit
-
-Streamlit의 [st.camera_input](https://docs.streamlit.io/develop/api-reference/widgets/st.camera_input#stcamera_input)을 이용하면 아래와 같이 구현이 가능합니다.
-
-```python
-import streamlit as st
-
-enable = st.checkbox("Enable camera")
-picture = st.camera_input("Take a picture", disabled=not enable)
-
-if picture:
-    st.image(picture)
-```
-
-구현된 화면 이미지입니다.
-
-<img width="699" alt="image" src="https://github.com/user-attachments/assets/63ca9cf1-64f1-47a3-aefb-f33f23643b5a" />
 
 
 ## OpenCV
@@ -59,6 +42,27 @@ else:
 실행화면입니다.
 
 <img width="680" alt="image" src="https://github.com/user-attachments/assets/cd775475-9102-4eb0-88ee-5f7d284ca5c1" />
+
+
+## Streamlit
+
+Streamlit의 [st.camera_input](https://docs.streamlit.io/develop/api-reference/widgets/st.camera_input#stcamera_input)을 이용하면 아래와 같이 구현이 가능합니다.
+
+```python
+import streamlit as st
+
+enable = st.checkbox("Enable camera")
+picture = st.camera_input("Take a picture", disabled=not enable)
+
+if picture:
+    st.image(picture)
+```
+
+구현된 화면 이미지입니다.
+
+<img width="699" alt="image" src="https://github.com/user-attachments/assets/63ca9cf1-64f1-47a3-aefb-f33f23643b5a" />
+
+
 
 ## QR Detector 
 
