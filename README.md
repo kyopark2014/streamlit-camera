@@ -150,3 +150,4 @@ if image is not None:
 
 ## Reference
 
+[Live Webcam with Streamlit](https://z-uo.medium.com/live-webcam-with-streamlit-f32bf68945a4)
